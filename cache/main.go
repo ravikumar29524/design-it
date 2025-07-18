@@ -121,7 +121,7 @@ func main() {
 	go Producer(cache)
 
 	// 5 -> number of queries per iteration
-	go Consumer(cache, 10)
+	go Consumer(cache, 5)
 
 	// keep the main function running
 	select {}
